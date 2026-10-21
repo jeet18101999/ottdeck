@@ -1,0 +1,5 @@
+httpx>=0.27
+python-dotenv>=1.0
+platformdirs>=4.0
+rapidfuzz>=3.9
+PySide6>=6.10

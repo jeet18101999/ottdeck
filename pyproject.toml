@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ottdeck"
+version = "0.1.0"
+description = "One searchable catalogue across every streaming service, as a desktop app"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "httpx>=0.27",
+    "python-dotenv>=1.0",
+    "platformdirs>=4.0",
+    "rapidfuzz>=3.9",
+    "PySide6>=6.10",
+]
+
+[project.scripts]
+ottdeck = "ottdeck.cli:main"
+
+[project.gui-scripts]
+ottdeck-app = "ottdeck.gui:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,5 @@
+[console_scripts]
+ottdeck = ottdeck.cli:main
+
+[gui_scripts]
+ottdeck-app = ottdeck.gui:main
